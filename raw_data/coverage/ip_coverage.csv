@@ -1,0 +1,36 @@
+ASN,Name,T1,% On-Net v4 Space,% On-Net v6 Space
+174,Cogent,True,98.27,80.80
+701,Verizon,True,97.75,85.90
+1273,Vodafone,False,98.49,94.81
+1299,Telia,True,98.67,92.57
+2914,NTT,True,98.22,89.05
+3257,GTT,True,98.22,89.23
+3320,DTAG,True,98.13,80.95
+3356,Lumen,True,99.66,96.72
+3491,PCCW,True,98.63,94.78
+4637,Telstra,False,94.05,91.16
+5511,Orange,True,98.14,91.40
+6453,Tata,True,98.21,85.34
+6461,Zayo,True,98.20,91.13
+6762,TI Sparkle,True,98.31,89.34
+6830,Liberty Global,True,98.14,88.95
+6939,Hurricane Electric,True,98.17,91.15
+7018,AT&T,True,98.17,88.88
+7473,SingTel,False,98.08,70.37
+9002,RETN,False,98.17,91.89
+9498,Bharti Airtel,False,98.07,82.45
+12956,Telxius,True,98.25,88.98
+13786,Seaborn,False,98.19,91.63
+14840,BR DIGITAL,False,98.14,91.57
+20473,Constant Company,False,97.99,17.38
+24482,SG.GS,False,98.15,89.32
+35280,F5 Networks,False,98.16,92.28
+36236,Net Actuate,False,98.14,91.88
+37468,Angola Cables,False,98.20,91.48
+37721,VT&S,False,97.38,91.75
+39120,Convergenze,False,98.14,91.69
+49544,i3D.net,False,98.17,91.74
+52320,GlobeNet,False,98.25,91.35
+57463,NetIX Comms,False,34.11,90.84
+64289,Macarne,False,98.14,91.35
+199524,G-Core,False,98.20,91.98
