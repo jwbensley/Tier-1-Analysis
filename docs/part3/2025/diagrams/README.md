@@ -7,7 +7,7 @@ A few different diagrams have been rendered from the same data. The "small" imag
 The "nodesizes" images have each ASN centered on a blue dot. The size of the blue dot is based on the number of connections that ASN has.
 
 * 8-12MBs per image:
-  * [graph_87860_60_60_60_kamada.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_150_150_150_kamada.png)
+  * [graph_87860_60_60_60_kamada.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_kamada.png)
   * [graph_87860_60_60_60_kamada_nodesizes.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_kamada_nodesizes.png)
   * [graph_87860_60_60_60_spring.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_spring.png)
   * [graph_87860_60_60_60_spring_nodesizes.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_spring_nodesizes.png)
