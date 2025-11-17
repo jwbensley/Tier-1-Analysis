@@ -10,14 +10,16 @@ The content in this repository aims to provide information showing how this tier
 
 To do this, BGP data from the most interconnected networks in the world will be gathered, analysed and compared.
 
-> [!NOTE]
-> I'm going to do quite a bit of shitting on the Tier 1 networks however, one very important (to me) point of note; I know personally people who work at some of the networks being analysed. They are great engineers, much smarter than me. I am not criticising the technical operations or design of these networks. I am criticising the economic and political choices made by the companies, and the connectivity market at large.
+| :memo: Note |
+|:------------|
+| I'm going to do quite a bit of shitting on the Tier 1 networks however, one very important (to me) point of note; I know personally people who work at some of the networks being analysed. They are great engineers, much smarter than me. I am not criticising the technical operations or design of these networks. I am criticising the economic and political choices made by the companies, and the connectivity market at large. |
 
 ## The Problems with Network Tiers
 
 In this part the problem with the tiering system is discussed, and a list of networks for analysis is compiled:
 
 * [What is the network tiering system and what's wrong with it?](part1/network_tiers.md)
+* [What's Wrong With The Tier 1 Definition](part1/tier1_problems.md)
 * [Who are the tier 1 networks?](part1/tier1_asns.md)
 * [Identifying other networks to compare with tier 1s](part1/asns_of_interest.md)
 
@@ -59,12 +61,14 @@ In alphabetical order:
 
 ## Reproducibility and Transparency
 
-> [!IMPORTANT]
-> Some of the information provided is hard data, for example data gathered from BGP, which is publicly available so that anyone can see for themselves. Some of it is anecdotal and information not easily verifiable via public sources, which I have gathered based on private chats at conferences, having been involved in buying and selling such services, writing and responding to RFPs, reading through MSAs, and generally operating networks for nearly two decades. I have tried to make the use of publicly verifiable facts vs anecdotes clear throughout.
+| :warning: Important |
+|:--------------------|
+| Some of the information provided is hard data, for example data gathered from BGP, which is publicly available so that anyone can see for themselves. Some of it is anecdotal and information not easily verifiable via public sources, which I have gathered based on private chats at conferences, having been involved in buying and selling such services, writing and responding to RFPs, reading through MSAs, and generally operating networks for nearly two decades. I have tried to make the use of publicly verifiable facts vs anecdotes clear throughout. |
 
 Another factor of reproducibility is the ability for someone else to run the code. Yes, this is written in Python which means it's very slow and very memory inefficient when run. This is a spare time project _and_ not about real-time analysis. This means I need to optimise for reducing developer time, not run time. If you want to run the code, it takes a full night and about 50GBs of RAM. I'm slowly transitioning to writing my personal projects in rust, but I saved _a lot_ of time by writing this in Python, deal with it. The repo for this project is: <https://github.com/jwbensley/Tier-1-Analysis>
 
 ## Disclaimer about DFZ Analyses
 
-> [!WARNING]
-> Anyone who tells you something is a hard fact about the DFZ is either lying or doesn't know what they're talking about. A fundamental property of the DFZ is that there is no one single DFZ. The information provided in the reports in this repo provide approximations, indications, suggestions, and never exact 100% undeniable facts. Don't make any decisions or formulate any opinions based on the data found in this repo. I take no responsibility for any outcomes that result from someone reading the data in this repo.
+| :exclamation: Warning |
+|:----------------------|
+| Anyone who tells you something is a hard fact about the DFZ is either lying or doesn't know what they're talking about. A fundamental property of the DFZ is that there is no one single DFZ. The information provided in the reports in this repo provide approximations, indications, suggestions, and never exact 100% undeniable facts. Don't make any decisions or formulate any opinions based on the data found in this repo. I take no responsibility for any outcomes that result from someone reading the data in this repo. |
