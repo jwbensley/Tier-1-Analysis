@@ -1,0 +1,26 @@
+{
+  "messages": [],
+  "see_also": [],
+  "version": "1.0",
+  "data_call_name": "ris-full-table-threshold",
+  "data_call_status": "supported",
+  "cached": true,
+  "data": {
+    "result_time": "2025-11-14T08:00:00",
+    "v4": 918524,
+    "v6": 208534,
+    "latest_time": "2025-11-14T08:00:00",
+    "earliest_time": "2001-03-24T00:00:00",
+    "parameters": {
+      "query_time": "2025-11-14T08:00:00",
+      "cache": null
+    }
+  },
+  "query_id": "20251114153416-7a2dc88d-e650-47ba-a352-e05828664065",
+  "process_time": 30,
+  "server_id": "app197",
+  "build_version": "main-2025.09.19",
+  "status": "ok",
+  "status_code": 200,
+  "time": "2025-11-14T15:34:16.901544"
+}

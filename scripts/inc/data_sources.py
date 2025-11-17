@@ -1,0 +1,495 @@
+from __future__ import annotations
+
+from enum import StrEnum
+
+
+class Collectors:
+
+    class Collector(StrEnum):
+        """
+        Public route collectors
+        """
+
+        """
+        RIPE RIS Collectors
+        """
+        RRC_00 = "rrc00"
+        RRC_01 = "rrc01"
+        # This collector stopped in 2008.10
+        # RRC_02 = "rrc02"
+        RRC_03 = "rrc03"
+        RRC_04 = "rrc04"
+        RRC_05 = "rrc05"
+        RRC_06 = "rrc06"
+        RRC_07 = "rrc07"
+        # This collector stopped in 2004.09
+        # RRC_08 = "rrc08"
+        # This collector stopped in 2004.02
+        # RRC_09 = "rrc09"
+        RRC_10 = "rrc10"
+        RRC_11 = "rrc11"
+        RRC_12 = "rrc12"
+        RRC_13 = "rrc13"
+        RRC_14 = "rrc14"
+        RRC_15 = "rrc15"
+        RRC_16 = "rrc16"
+        # There is no RRC17
+        RRC_18 = "rrc18"
+        RRC_19 = "rrc19"
+        RRC_20 = "rrc20"
+        RRC_21 = "rrc21"
+        RRC_22 = "rrc22"
+        RRC_23 = "rrc23"
+        RRC_24 = "rrc24"
+        RRC_25 = "rrc25"
+
+        """
+        RouteViews Collectors
+        """
+        ROUTEVIEWS_2 = "route-views2"
+        ROUTEVIEWS_3 = "route-views3"
+        ROUTEVIEWS_4 = "route-views4"
+        ROUTEVIEWS_5 = "route-views5"
+        ROUTEVIEWS_6 = "route-views6"
+        ROUTEVIEWS_7 = "route-views7"
+        ROUTEVIEWS_AMSIX = "route-views.amsix"
+        ROUTEVIEWS_AMSIX_AMS = "amsix.ams"
+        ROUTEVIEWS_CIX_ATL = "cix.atl"
+        ROUTEVIEWS_BDIX = "route-views.bdix"
+        ROUTEVIEWS_BKNIX = "route-views.bknix"
+        ROUTEVIEWS_CHICAGO = "route-views.chicago"
+        ROUTEVIEWS_CHILE = "route-views.chile"
+        ROUTEVIEWS_EQIX = "route-views.eqix"
+        ROUTEVIEWS_FLIX = "route-views.flix"
+        ROUTEVIEWS_GIXA = "route-views.gixa"
+        ROUTEVIEWS_GOREX = "route-views.gorex"
+        # This collector started in 2025-10:
+        ROUTEVIEWS_HKIX = "hkix.hkg"
+        ROUTEVIEWS_IRAQIXP_BGW = "iraq-ixp.bgw"
+        ROUTEVIEWS_ISC = "route-views.isc"
+        ROUTEVIEWS_KINX_ICN = "kinx.icn"
+        ROUTEVIEWS_NAMEX_FCO = "namex.fco"
+        ROUTEVIEWS_KIXP = "route-views.kixp"
+        # This collector stopped in 2019.08:
+        # ROUTEVIEWS_JINX = "route-views.jinx"
+        ROUTEVIEWS_LINX = "route-views.linx"
+        # This collector started in 2025-10:
+        ROUTEVIEWS_NETNOD = "netnod.mmx"
+        ROUTEVIEWS_MWIX = "route-views.mwix"
+        ROUTEVIEWS_NAPAFRICA = "route-views.napafrica"
+        ROUTEVIEWS_NWAX = "route-views.nwax"
+        ROUTEVIEWS_PACWAVE_LAX = "pacwave.lax"
+        ROUTEVIEWS_PIT_SCL = "pit.scl"
+        ROUTEVIEWS_PITMX_QRO = "pitmx.qro"
+        ROUTEVIEWS_PHOIX = "route-views.phoix"
+        ROUTEVIEWS_TELXATL = "route-views.telxatl"
+        ROUTEVIEWS_WIDE = "route-views.wide"
+        ROUTEVIEWS_SYDNEY = "route-views.sydney"
+        # This collector stopped in 2022.10:
+        # ROUTEVIEWS_SAOPAULO = "route-views.saopaulo"
+        ROUTEVIEWS_2_SAOPAULO = "route-views2.saopaulo"
+        # This collector stopped in 2025.05:
+        ROUTEVIEWS_SG = "route-views.sg"
+        ROUTEVIEWS_PERTH = "route-views.perth"
+        ROUTEVIEWS_PERU = "route-views.peru"
+        ROUTEVIEWS_SFMIX = "route-views.sfmix"
+        # This collector stopped in 2022.04:
+        # ROUTEVIEWS_SIEX = "route-views.siex"
+        ROUTEVIEWS_SOXRS = "route-views.soxrs"
+        ROUTEVIEWS_RIO = "route-views.rio"
+        ROUTEVIEWS_FORTALEZA = "route-views.fortaleza"
+        ROUTEVIEWS_UAEIX = "route-views.uaeix"
+        ROUTEVIEWS_NY = "route-views.ny"
+
+        """
+        PCH Collectors
+        """
+        PCH_02_OSL = "route-collector-02.osl.pch.net"
+        PCH_4IXP_ZRH3 = "route-collector.4ixp.zrh3.pch.net"
+        PCH_ABJ = "route-collector.abj.pch.net"
+        PCH_ACC = "route-collector.acc.pch.net"
+        PCH_ACH = "route-collector.ach.pch.net"
+        PCH_AEP = "route-collector.aep.pch.net"
+        PCH_AGT = "route-collector.agt.pch.net"
+        PCH_AIX_JKT = "route-collector.aix-jkt.pch.net"
+        PCH_AKL = "route-collector.akl.pch.net"
+        PCH_AKL2 = "route-collector.akl2.pch.net"
+        PCH_AMS = "route-collector.ams.pch.net"
+        PCH_AMSIX_LGA = "route-collector.amsix-lga.pch.net"
+        PCH_AMSIX_ORD = "route-collector.amsix-ord.pch.net"
+        PCH_AMSIX_SFO = "route-collector.amsix-sfo.pch.net"
+        PCH_AMSIX_HKG2 = "route-collector.amsix.hkg2.pch.net"
+        PCH_AMSIX_QPG = "route-collector.amsix.qpg.pch.net"
+        PCH_AQJ = "route-collector.aqj.pch.net"
+        # This collector stopped in 2025.01:
+        # PCH_ARK = "route-collector.ark.pch.net"
+        PCH_ARN = "route-collector.arn.pch.net"
+        PCH_ASTEROID_MBA = "route-collector.asteroid-mba.pch.net"
+        PCH_ASU = "route-collector.asu.pch.net"
+        PCH_ATH = "route-collector.ath.pch.net"
+        PCH_ATL = "route-collector.atl.pch.net"
+        PCH_BAH2 = "route-collector.bah2.pch.net"
+        PCH_BBIX_HKG2 = "route-collector.bbix.hkg2.pch.net"
+        PCH_BBIX_ITM = "route-collector.bbix.itm.pch.net"
+        PCH_BBIX_NRT2 = "route-collector.bbix.nrt2.pch.net"
+        PCH_BCN = "route-collector.bcn.pch.net"
+        PCH_BEG = "route-collector.beg.pch.net"
+        PCH_BER = "route-collector.ber.pch.net"
+        PCH_BEY = "route-collector.bey.pch.net"
+        PCH_BGR = "route-collector.bgr.pch.net"
+        PCH_BGW = "route-collector.bgw.pch.net"
+        PCH_BJL = "route-collector.bjl.pch.net"
+        PCH_BJM = "route-collector.bjm.pch.net"
+        PCH_BKK = "route-collector.bkk.pch.net"
+        PCH_BKK2 = "route-collector.bkk2.pch.net"
+        PCH_BKO = "route-collector.bko.pch.net"
+        PCH_BLR = "route-collector.blr.pch.net"
+        PCH_BOG2 = "route-collector.bog2.pch.net"
+        PCH_BOM2 = "route-collector.bom2.pch.net"
+        PCH_BOS = "route-collector.bos.pch.net"
+        PCH_BOY = "route-collector.boy.pch.net"
+        PCH_BTS = "route-collector.bts.pch.net"
+        PCH_BUD = "route-collector.bud.pch.net"
+        PCH_BUR = "route-collector.bur.pch.net"
+        PCH_BVY = "route-collector.bvy.pch.net"
+        PCH_BWI = "route-collector.bwi.pch.net"
+        PCH_BWI2 = "route-collector.bwi2.pch.net"
+        PCH_BZV = "route-collector.bzv.pch.net"
+        PCH_CAK = "route-collector.cak.pch.net"
+        PCH_CCU = "route-collector.ccu.pch.net"
+        PCH_CDG = "route-collector.cdg.pch.net"
+        PCH_CHIX_CH_ACH2 = "route-collector.chix-ch.ach2.pch.net"
+        PCH_CMB = "route-collector.cmb.pch.net"
+        PCH_CMH = "route-collector.cmh.pch.net"
+        PCH_CMN = "route-collector.cmn.pch.net"
+        PCH_CNX = "route-collector.cnx.pch.net"
+        PCH_COO = "route-collector.coo.pch.net"
+        PCH_CPT = "route-collector.cpt.pch.net"
+        PCH_DAC = "route-collector.dac.pch.net"
+        PCH_DAC2 = "route-collector.dac2.pch.net"
+        PCH_DAL = "route-collector.dal.pch.net"
+        PCH_DAR = "route-collector.dar.pch.net"
+        PCH_DECIX_ASEAN_KUL2 = "route-collector.decix-asean.kul2.pch.net"
+        PCH_DECIX_BCN_MAD = "route-collector.decix-bcn.mad.pch.net"
+        PCH_DECIX_DUS_FRA = "route-collector.decix-dus.fra.pch.net"
+        PCH_DECIX_HAM_FRA = "route-collector.decix-ham.fra.pch.net"
+        PCH_DECIX_JHB_JHB = "route-collector.decix-jhb.jhb.pch.net"
+        PCH_DECIX_LIS_MAD = "route-collector.decix-lis.mad.pch.net"
+        PCH_DECIX_MUC_FRA = "route-collector.decix-muc.fra.pch.net"
+        PCH_DECIX_MY_KUL2 = "route-collector.decix-my.kul2.pch.net"
+        PCH_DECIX_MY2_JHB = "route-collector.decix-my2.jhb.pch.net"
+        PCH_DECIX_NY_LGA = "route-collector.decix-ny.lga.pch.net"
+        PCH_DECIX_RUHR_FRA = "route-collector.decix-ruhr.fra.pch.net"
+        PCH_DECIX_BOM2 = "route-collector.decix.bom2.pch.net"
+        PCH_DECIX_ORD = "route-collector.decix.ord.pch.net"
+        PCH_DEL = "route-collector.del.pch.net"
+        PCH_DEN = "route-collector.den.pch.net"
+        PCH_DFW = "route-collector.dfw.pch.net"
+        PCH_DLA = "route-collector.dla.pch.net"
+        PCH_DOD = "route-collector.dod.pch.net"
+        PCH_DOH2 = "route-collector.doh2.pch.net"
+        PCH_DOM = "route-collector.dom.pch.net"
+        PCH_DTM = "route-collector.dtm.pch.net"
+        PCH_DTW = "route-collector.dtw.pch.net"
+        PCH_DUB = "route-collector.dub.pch.net"
+        PCH_DUR = "route-collector.dur.pch.net"
+        PCH_DVN = "route-collector.dvn.pch.net"
+        PCH_DXB = "route-collector.dxb.pch.net"
+        PCH_ECIX_DUS_FRA = "route-collector.ecix-dus.fra.pch.net"
+        PCH_ECIX_FRA = "route-collector.ecix-fra.pch.net"
+        PCH_ECIX_MUC_FRA = "route-collector.ecix-muc.fra.pch.net"
+        PCH_EDI = "route-collector.edi.pch.net"
+        PCH_EIS = "route-collector.eis.pch.net"
+        PCH_EQUINIX_DALLAS_DFW = "route-collector.equinix-dallas.dfw.pch.net"
+        PCH_EQUINIX_SG = "route-collector.equinix-sg.pch.net"
+        PCH_EQUINIX_BOM2 = "route-collector.equinix.bom2.pch.net"
+        PCH_ESPANIX_MAD = "route-collector.espanix-mad.pch.net"
+        PCH_EVN = "route-collector.evn.pch.net"
+        PCH_EWR = "route-collector.ewr.pch.net"
+        PCH_FBM = "route-collector.fbm.pch.net"
+        PCH_FCO = "route-collector.fco.pch.net"
+        PCH_FIH = "route-collector.fih.pch.net"
+        PCH_FL_IX_MIA = "route-collector.fl-ix.mia.pch.net"
+        PCH_FOGIXP_ACH2 = "route-collector.fogixp.ach2.pch.net"
+        PCH_FRA = "route-collector.fra.pch.net"
+        PCH_FRA2 = "route-collector.fra2.pch.net"
+        PCH_FRANCEIX_MRS = "route-collector.franceix-mrs.pch.net"
+        PCH_FRU = "route-collector.fru.pch.net"
+        PCH_GND = "route-collector.gnd.pch.net"
+        PCH_GUA = "route-collector.gua.pch.net"
+        PCH_GUA2 = "route-collector.gua2.pch.net"
+        PCH_GUM = "route-collector.gum.pch.net"
+        PCH_GVA = "route-collector.gva.pch.net"
+        PCH_GYE = "route-collector.gye.pch.net"
+        PCH_HAM = "route-collector.ham.pch.net"
+        PCH_HKG = "route-collector.hkg.pch.net"
+        PCH_HKG2 = "route-collector.hkg2.pch.net"
+        PCH_HLA = "route-collector.hla.pch.net"
+        PCH_HRE = "route-collector.hre.pch.net"
+        PCH_HYD = "route-collector.hyd.pch.net"
+        PCH_IAD = "route-collector.iad.pch.net"
+        PCH_ICN = "route-collector.icn.pch.net"
+        PCH_ICN2 = "route-collector.icn2.pch.net"
+        PCH_INIXP_NRT2 = "route-collector.inixp.nrt2.pch.net"
+        PCH_IST = "route-collector.ist.pch.net"
+        PCH_ITM = "route-collector.itm.pch.net"
+        PCH_JAX = "route-collector.jax.pch.net"
+        PCH_JHB = "route-collector.jhb.pch.net"
+        PCH_JIB = "route-collector.jib.pch.net"
+        PCH_JKT = "route-collector.jkt.pch.net"
+        PCH_JKT2 = "route-collector.jkt2.pch.net"
+        PCH_JNB = "route-collector.jnb.pch.net"
+        PCH_JPIX_ITM = "route-collector.jpix.itm.pch.net"
+        PCH_JPIX = "route-collector.jpix.pch.net"
+        PCH_KBL = "route-collector.kbl.pch.net"
+        PCH_KBP = "route-collector.kbp.pch.net"
+        PCH_KEF = "route-collector.kef.pch.net"
+        PCH_KGL = "route-collector.kgl.pch.net"
+        PCH_KIN = "route-collector.kin.pch.net"
+        PCH_KLU = "route-collector.klu.pch.net"
+        PCH_KTM = "route-collector.ktm.pch.net"
+        PCH_KUL = "route-collector.kul.pch.net"
+        PCH_KUL2 = "route-collector.kul2.pch.net"
+        PCH_KWI = "route-collector.kwi.pch.net"
+        PCH_LAD = "route-collector.lad.pch.net"
+        PCH_LBA = "route-collector.lba.pch.net"
+        PCH_LBV = "route-collector.lbv.pch.net"
+        PCH_LFW = "route-collector.lfw.pch.net"
+        PCH_LGA = "route-collector.lga.pch.net"
+        PCH_LHR = "route-collector.lhr.pch.net"
+        PCH_LIM = "route-collector.lim.pch.net"
+        PCH_LINX_IAD = "route-collector.linx-iad.pch.net"
+        PCH_LIS = "route-collector.lis.pch.net"
+        PCH_LJU = "route-collector.lju.pch.net"
+        PCH_LOCIX_FRA2 = "route-collector.locix.fra2.pch.net"
+        PCH_LONAP = "route-collector.lonap.pch.net"
+        PCH_LOS = "route-collector.los.pch.net"
+        PCH_LOS2 = "route-collector.los2.pch.net"
+        PCH_LPB = "route-collector.lpb.pch.net"
+        PCH_LPB2 = "route-collector.lpb2.pch.net"
+        PCH_LUN = "route-collector.lun.pch.net"
+        PCH_LUX = "route-collector.lux.pch.net"
+        PCH_LYS = "route-collector.lys.pch.net"
+        PCH_MAA = "route-collector.maa.pch.net"
+        PCH_MAD = "route-collector.mad.pch.net"
+        PCH_MAN = "route-collector.man.pch.net"
+        PCH_MBA = "route-collector.mba.pch.net"
+        PCH_MCI = "route-collector.mci.pch.net"
+        PCH_MCIX = "route-collector.mcix.pch.net"
+        PCH_MDL_RGN = "route-collector.mdl.rgn.pch.net"
+        PCH_MDQ = "route-collector.mdq.pch.net"
+        PCH_MEGAPORT_AKL = "route-collector.megaport-akl.pch.net"
+        PCH_MEGAPORT_BNE = "route-collector.megaport-bne.pch.net"
+        PCH_MEGAPORT_BUR = "route-collector.megaport-bur.pch.net"
+        PCH_MEGAPORT_MEL = "route-collector.megaport-mel.pch.net"
+        PCH_MEGAPORT_PER = "route-collector.megaport-per.pch.net"
+        PCH_MEGAPORT_SEA = "route-collector.megaport-sea.pch.net"
+        PCH_MEGAPORT_SOF = "route-collector.megaport-sof.pch.net"
+        PCH_MEGAPORT_SYD = "route-collector.megaport-syd.pch.net"
+        PCH_MEL = "route-collector.mel.pch.net"
+        PCH_MEX = "route-collector.mex.pch.net"
+        PCH_MGM = "route-collector.mgm.pch.net"
+        PCH_MGQ = "route-collector.mgq.pch.net"
+        PCH_MIA = "route-collector.mia.pch.net"
+        PCH_MIDWESTIX_ORD = "route-collector.midwestix-ord.pch.net"
+        PCH_MKE = "route-collector.mke.pch.net"
+        PCH_MLE = "route-collector.mle.pch.net"
+        PCH_MNL2 = "route-collector.mnl2.pch.net"
+        PCH_MNL3 = "route-collector.mnl3.pch.net"
+        PCH_MPM = "route-collector.mpm.pch.net"
+        PCH_MRS = "route-collector.mrs.pch.net"
+        PCH_MRU = "route-collector.mru.pch.net"
+        PCH_MSP = "route-collector.msp.pch.net"
+        PCH_NAPAFRICA_JNB = "route-collector.napafrica-jnb.pch.net"
+        PCH_NBO = "route-collector.nbo.pch.net"
+        PCH_NDD = "route-collector.ndd.pch.net"
+        PCH_NDJ = "route-collector.ndj.pch.net"
+        PCH_NETIX = "route-collector.netix.pch.net"
+        PCH_NETNOD_BLUE_JUMBO_ARN = (
+            "route-collector.netnod-blue-jumbo.arn.pch.net"
+        )
+        PCH_NETNOD_GREEN_JUMBO_ARN = (
+            "route-collector.netnod-green-jumbo.arn.pch.net"
+        )
+        PCH_NETNOD_GREEN_ARN = "route-collector.netnod-green.arn.pch.net"
+        PCH_NIXI_BOM2 = "route-collector.nixi.bom2.pch.net"
+        PCH_NIXI_DEL = "route-collector.nixi.del.pch.net"
+        PCH_NL_IX = "route-collector.nl-ix.pch.net"
+        PCH_NRT = "route-collector.nrt.pch.net"
+        PCH_NRT2 = "route-collector.nrt2.pch.net"
+        PCH_NSW_IX = "route-collector.nsw-ix.pch.net"
+        PCH_NYIIX = "route-collector.nyiix.pch.net"
+        PCH_ORD = "route-collector.ord.pch.net"
+        PCH_OSL = "route-collector.osl.pch.net"
+        PCH_OTP = "route-collector.otp.pch.net"
+        PCH_OUA = "route-collector.oua.pch.net"
+        PCH_PAIX_SEA = "route-collector.paix-sea.pch.net"
+        PCH_PAO = "route-collector.pao.pch.net"
+        PCH_PAP = "route-collector.pap.pch.net"
+        PCH_PBH = "route-collector.pbh.pch.net"
+        PCH_PBM = "route-collector.pbm.pch.net"
+        PCH_PCB = "route-collector.pcb.pch.net"
+        PCH_PDX = "route-collector.pdx.pch.net"
+        PCH_PER = "route-collector.per.pch.net"
+        PCH_PGZ = "route-collector.pgz.pch.net"
+        PCH_PHX = "route-collector.phx.pch.net"
+        PCH_PIT = "route-collector.pit.pch.net"
+        PCH_PLX = "route-collector.plx.pch.net"
+        PCH_PLZ = "route-collector.plz.pch.net"
+        PCH_PNH = "route-collector.pnh.pch.net"
+        PCH_POS = "route-collector.pos.pch.net"
+        PCH_PRG = "route-collector.prg.pch.net"
+        PCH_PSS = "route-collector.pss.pch.net"
+        PCH_PTY = "route-collector.pty.pch.net"
+        PCH_QLS = "route-collector.qls.pch.net"
+        PCH_QPG = "route-collector.qpg.pch.net"
+        PCH_QRO = "route-collector.qro.pch.net"
+        PCH_RGN = "route-collector.rgn.pch.net"
+        PCH_RIC = "route-collector.ric.pch.net"
+        PCH_RIX_AMS = "route-collector.rix-ams.pch.net"
+        PCH_RIX = "route-collector.rix.pch.net"
+        PCH_RMO = "route-collector.rmo.pch.net"
+        PCH_RNO = "route-collector.rno.pch.net"
+        PCH_ROB = "route-collector.rob.pch.net"
+        PCH_ROS = "route-collector.ros.pch.net"
+        PCH_RUH = "route-collector.ruh.pch.net"
+        PCH_SAP = "route-collector.sap.pch.net"
+        PCH_SBH = "route-collector.sbh.pch.net"
+        PCH_SBIX_ZRH3 = "route-collector.sbix.zrh3.pch.net"
+        PCH_SCL = "route-collector.scl.pch.net"
+        PCH_SDB = "route-collector.sdb.pch.net"
+        PCH_SEA = "route-collector.sea.pch.net"
+        PCH_SFO = "route-collector.sfo.pch.net"
+        PCH_SGE = "route-collector.sge.pch.net"
+        PCH_SGU = "route-collector.sgu.pch.net"
+        PCH_SJC = "route-collector.sjc.pch.net"
+        PCH_SJJ = "route-collector.sjj.pch.net"
+        PCH_SJO = "route-collector.sjo.pch.net"
+        PCH_SJU = "route-collector.sju.pch.net"
+        PCH_SKB = "route-collector.skb.pch.net"
+        PCH_SKP = "route-collector.skp.pch.net"
+        PCH_SLC = "route-collector.slc.pch.net"
+        PCH_SLU = "route-collector.slu.pch.net"
+        PCH_SNA = "route-collector.sna.pch.net"
+        PCH_SOC_YIA = "route-collector.soc.yia.pch.net"
+        PCH_SOF = "route-collector.sof.pch.net"
+        PCH_SRG_YIA = "route-collector.srg.yia.pch.net"
+        PCH_STL = "route-collector.stl.pch.net"
+        PCH_STR = "route-collector.str.pch.net"
+        PCH_SXF = "route-collector.sxf.pch.net"
+        PCH_SYD = "route-collector.syd.pch.net"
+        PCH_SZG = "route-collector.szg.pch.net"
+        PCH_TAS = "route-collector.tas.pch.net"
+        PCH_TCIX = "route-collector.tcix.pch.net"
+        PCH_TERACO_DUR = "route-collector.teraco-dur.pch.net"
+        PCH_TGU = "route-collector.tgu.pch.net"
+        PCH_TIA = "route-collector.tia.pch.net"
+        PCH_TIE_NY = "route-collector.tie-ny.pch.net"
+        PCH_TIE_PHX = "route-collector.tie-phx.pch.net"
+        PCH_TLL = "route-collector.tll.pch.net"
+        PCH_TLV = "route-collector.tlv.pch.net"
+        PCH_TMP = "route-collector.tmp.pch.net"
+        PCH_TPA = "route-collector.tpa.pch.net"
+        PCH_TPE = "route-collector.tpe.pch.net"
+        PCH_TPE2 = "route-collector.tpe2.pch.net"
+        PCH_TRD = "route-collector.trd.pch.net"
+        PCH_TRN = "route-collector.trn.pch.net"
+        PCH_TUN = "route-collector.tun.pch.net"
+        PCH_UBN = "route-collector.ubn.pch.net"
+        PCH_UNITEDIX_ORD = "route-collector.unitedix-ord.pch.net"
+        PCH_UNM_YVR2 = "route-collector.unm.yvr2.pch.net"
+        PCH_VIE = "route-collector.vie.pch.net"
+        PCH_WAW = "route-collector.waw.pch.net"
+        PCH_WAW2 = "route-collector.waw2.pch.net"
+        PCH_WDH = "route-collector.wdh.pch.net"
+        PCH_WLG = "route-collector.wlg.pch.net"
+        PCH_WPGIX = "route-collector.wpgix.pch.net"
+        PCH_YHZ = "route-collector.yhz.pch.net"
+        PCH_YIA = "route-collector.yia.pch.net"
+        PCH_YOW2 = "route-collector.yow2.pch.net"
+        PCH_YQM = "route-collector.yqm.pch.net"
+        PCH_YUL = "route-collector.yul.pch.net"
+        PCH_YVR2 = "route-collector.yvr2.pch.net"
+        PCH_YWG = "route-collector.ywg.pch.net"
+        PCH_YXE = "route-collector.yxe.pch.net"
+        PCH_YYC = "route-collector.yyc.pch.net"
+        PCH_ZAG = "route-collector.zag.pch.net"
+        PCH_ZDM = "route-collector.zdm.pch.net"
+        PCH_ZRH = "route-collector.zrh.pch.net"
+        PCH_ZRH2 = "route-collector.zrh2.pch.net"
+
+        def is_pch(self: Collectors.Collector) -> bool:
+            return self.name.startswith(Collectors.ArchiveKey.KEY_PCH)
+
+        def is_ris(self: Collectors.Collector) -> bool:
+            return self.name.startswith(Collectors.ArchiveKey.KEY_RIS)
+
+        def is_rv(self: Collectors.Collector) -> bool:
+            return self.name.startswith(Collectors.ArchiveKey.KEY_RV)
+
+        def archive(self: Collectors.Collector) -> Collectors.ArchiveKey:
+            if self.is_pch():
+                return Collectors.ArchiveKey.KEY_PCH
+            elif self.is_ris():
+                return Collectors.ArchiveKey.KEY_RIS
+            elif self.is_rv():
+                return Collectors.ArchiveKey.KEY_RV
+            else:
+                raise ValueError(f"Collector has unknown type: {self}")
+
+        def get_collector_urls(
+            self: Collectors.Collector, timestamp: str
+        ) -> list[str]:
+            """
+            Return the URL(s) for a collector.
+            Some collectors have separate URLs for IPv4 and IPv6 RIB files.
+            The format of timestamp must be "yyyymmdd.hhmm"
+            """
+
+            yyyy = timestamp[0:4]
+            mm = timestamp[4:6]
+            dd = timestamp[6:8]
+            if self.is_pch():
+                return [
+                    Collectors.urls[Collectors.ArchiveKey.KEY_PCH].format(
+                        4, yyyy, mm, self, self, 4, yyyy, mm, dd
+                    ),
+                    Collectors.urls[Collectors.ArchiveKey.KEY_PCH].format(
+                        6, yyyy, mm, self, self, 6, yyyy, mm, dd
+                    ),
+                ]
+            elif self.is_ris():
+                return [
+                    Collectors.urls[Collectors.ArchiveKey.KEY_RIS].format(
+                        self, yyyy, mm, timestamp
+                    )
+                ]
+            elif self.is_rv():
+                return [
+                    Collectors.urls[Collectors.ArchiveKey.KEY_RV].format(
+                        self, yyyy, mm, timestamp
+                    )
+                ]
+            else:
+                raise ValueError(
+                    f"Can't determine archive for collector: {self}"
+                )
+
+    class ArchiveKey(StrEnum):
+        KEY_NONE = "NONE"
+        KEY_PCH = "PCH"
+        KEY_RIS = "RRC"
+        KEY_RV = "ROUTEVIEWS"
+
+    urls = {
+        ArchiveKey.KEY_PCH: "https://www.pch.net/resources/Routing_Data/IPv{}_daily_snapshots/{}/{}/{}/{}-ipv{}_bgp_routes.{}.{}.{}.gz",
+        ArchiveKey.KEY_RIS: "https://data.ris.ripe.net/{}/{}.{}/bview.{}.gz",
+        ArchiveKey.KEY_RV: "https://archive.routeviews.org/{}/bgpdata/{}.{}/RIBS/rib.{}.bz2",
+    }
+
+    @staticmethod
+    def get_collector_from_url(url: str) -> Collector:
+        for collector in Collectors.Collector:
+            if collector.name in url:
+                return collector
+        raise ValueError(f"Couldn't match URL to collector: {url}")
