@@ -1,0 +1,8 @@
+docs/part3/2025/diagrams/graph_87860_60_60_60_kamada.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_60_60_60_spring_nodesizes.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_60_60_60_spring.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_150_150_150_kamada_nodesizes.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_150_150_150_kamada.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_150_150_150_spring_nodesizes.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_150_150_150_spring.png filter=lfs diff=lfs merge=lfs -text
+docs/part3/2025/diagrams/graph_87860_60_60_60_kamada_nodesizes.png filter=lfs diff=lfs merge=lfs -text
