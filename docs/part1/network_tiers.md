@@ -42,7 +42,7 @@ Some examples of the problems with the tiering system:
     * The extent of traffic filtering.
     * Support for BGP communities.
     * Ability to adopt new technologies.
-    * Ability to work around peering disputes ([more on this later](#the-exclusivity-of-being-a-tier-1-is-a-curse)).
+    * Ability to work around peering disputes ([more on this later](tier1_problems.md#the-exclusivity-of-being-a-tier-1-is-a-curse)).
 * It can unjustly punish a network because it's tier rank is higher than another network
 * It can unjustly promote a network because it's tier rank is lower than another network
 
@@ -83,7 +83,7 @@ The tiering system can also be thought of as a weird kind of tree hierarchy or a
                     └──────┘     
 ```
 
-The problem with this tiering topology is that it is pure theory, the Internet topology is actually a very dense partial-mesh, with peerings across all the tiering level boundaries ([more on this later](../part3/2025/diagrams/README.md)). With the rise of hyperscalers and massive CDN networks, a huge amount of traffic today is delivered from within a metro, and mostly within 1 AS hop within that metro. This is due to extensive public and private peering between source and destination networks, regardless of their "tier".
+The problem with this tiering topology is that it is pure theory, the Internet topology is actually a very dense partial-mesh, with peerings across all the tiering level boundaries ([see these diagrams](../part3/2025/diagrams/README.md)). With the rise of hyperscalers and massive CDN networks, a huge amount of traffic today is delivered from within a metro, and mostly within 1 AS hop within that metro. This is due to extensive public and private peering between source and destination networks, regardless of their "tier".
 
 As mentioned above though, there is no official definition, and the main two/three definitions I hear are:
 

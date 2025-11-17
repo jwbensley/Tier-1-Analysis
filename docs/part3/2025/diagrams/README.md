@@ -7,14 +7,14 @@ A few different diagrams have been rendered from the same data. The "small" imag
 The "nodesizes" images have each ASN centered on a blue dot. The size of the blue dot is based on the number of connections that ASN has.
 
 * 8-12MBs per image:
-  * [graph_87860_60_60_60_kamada.png](graph_87860_60_60_60_kamada.png)
-  * [graph_87860_60_60_60_kamada_nodesizes.png](graph_87860_60_60_60_kamada_nodesizes.png)
-  * [graph_87860_60_60_60_spring.png](graph_87860_60_60_60_spring.png)
-  * [graph_87860_60_60_60_spring_nodesizes.png](graph_87860_60_60_60_spring_nodesizes.png)
+  * [graph_87860_60_60_60_kamada.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_150_150_150_kamada.png)
+  * [graph_87860_60_60_60_kamada_nodesizes.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_kamada_nodesizes.png)
+  * [graph_87860_60_60_60_spring.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_spring.png)
+  * [graph_87860_60_60_60_spring_nodesizes.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_60_60_60_spring_nodesizes.png)
 * 125-175MBs per image:
-  * [graph_87860_150_150_150_kamada.png](graph_87860_150_150_150_kamada.png)
-  * [graph_87860_150_150_150_kamada_nodesizes.png](graph_87860_150_150_150_kamada_nodesizes.png)
-  * [graph_87860_150_150_150_spring.png](graph_87860_150_150_150_spring.png)
-  * [graph_87860_150_150_150_spring_nodesizes.png](graph_87860_150_150_150_spring_nodesizes.png)
+  * [graph_87860_150_150_150_kamada.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_150_150_150_kamada.png)
+  * [graph_87860_150_150_150_kamada_nodesizes.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_150_150_150_kamada_nodesizes.png)
+  * [graph_87860_150_150_150_spring.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_150_150_150_spring.png)
+  * [graph_87860_150_150_150_spring_nodesizes.png](https://github.com/jwbensley/Tier-1-Analysis/blob/main/docs/part3/2025/diagrams/graph_87860_150_150_150_spring_nodesizes.png)
 
 If you want to try and render these yourself using the scripts in this repo, be aware that this is requires several hours of rendering time and about 20GBs of RAM.
