@@ -117,7 +117,7 @@ In order to meet the Tier 1 criteria of not paying for any connectivity, a netwo
 
 This means a more exact definition for a Tier 1 network looks something like this:
 
-* The network Has full connectivity to all other networks on the public Internet.
+* The network has full connectivity to all other networks on the public Internet.
 * There are no networks which are upstreams of the network.
 * The network does not pay for connectivity to networks who are not a direct customer or reachable via a direct customer.
 
