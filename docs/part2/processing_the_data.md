@@ -28,7 +28,7 @@ Data from approximately 351 public route collectors has been analysed:
   * Collectors: 42
   * Full v4 tables: 297
   * Full v6 tables: 273
-* RIPE RIS: 647 (1381)
+* RIPE RIS:
   * Collectors: 22
   * Full v4 tables: 326
   * Full v6 tables: 325
