@@ -3,7 +3,7 @@ parent: Reports
 nav_order: 2
 ---
 
-# DFZ Diagrams
+# 2025 DFZ Diagrams
 
 This folder contains diagrams of the DFZ. Each point on the graph is an ASN which is not a stub ASN (a edge ASN with nothing behind it). This is because there are a lot of stub ASNs and including them not only causes the diagram to be so large that each ASN is just a tiny speck, but because they aren't very "interesting" ASNs topologically.
 
