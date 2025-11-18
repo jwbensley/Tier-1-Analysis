@@ -1,3 +1,7 @@
+---
+nav_order: 1
+---
+
 # Intro
 
 The archaic tiering system used for ranking networks that form the Internet implies that Tier 1 networks are the best ("best" will be [clarified later](part1/network_tiers.md)) at providing connectivity, followed by Tier 2 networks, and then finally Tier 3 networks.
