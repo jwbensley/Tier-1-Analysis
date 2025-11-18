@@ -1,6 +1,4 @@
-# Evaluating Network Tiers
-
-## Intro
+# Intro
 
 The archaic tiering system used for ranking networks that form the Internet implies that Tier 1 networks are the best ("best" will be [clarified later](part1/network_tiers.md)) at providing connectivity, followed by Tier 2 networks, and then finally Tier 3 networks.
 
@@ -18,7 +16,7 @@ To do this, BGP data from the most interconnected networks in the world will be 
 
 In this part the problem with the tiering system is discussed, and a list of networks for analysis is compiled:
 
-* [What is the network tiering system and what's wrong with it?](part1/network_tiers.md)
+* [What's the network tiering system and what's wrong with it?](part1/network_tiers.md)
 * [What's Wrong With The Tier 1 Definition](part1/tier1_problems.md)
 * [Who are the tier 1 networks?](part1/tier1_asns.md)
 * [Identifying other networks to compare with tier 1s](part1/asns_of_interest.md)
@@ -35,11 +33,9 @@ In this part the problem with getting usable data is demonstrated, and what data
 
 Below is a list of reports produced, each discusses what was found in the gathered and processes BGP data.
 
-Q3-2025 is the first time gathering and analysing the data, but the process is fully automated so it _might_ become a yearly event.
+Q4-2025 is the first time gathering and analysing the data, but the process is fully automated so it _might_ become a yearly event.
 
-An important point of note is that data was gathered an analysed for a single day to give a point-in-time reference. The DFZ is constantly changing, but at a very slow pace. If you look again, the numbers will have changed, but critically, a few weeks or one or two months later, the numbers won't have changed dramatically. My personal opinion is that the data in the reports are OK if used for macro level analysis, but not micro level.
-
-* [Q3-2025 Report](part3/2025/README.md)
+* [Q4-2025 Report](part3/2025/README.md)
 
 ## Credits
 
@@ -72,3 +68,5 @@ Another factor of reproducibility is the ability for someone else to run the cod
 | :exclamation: Warning |
 |:----------------------|
 | Anyone who tells you something is a hard fact about the DFZ is either lying or doesn't know what they're talking about. A fundamental property of the DFZ is that there is no one single DFZ. The information provided in the reports in this repo provide approximations, indications, suggestions, and never exact 100% undeniable facts. Don't make any decisions or formulate any opinions based on the data found in this repo. I take no responsibility for any outcomes that result from someone reading the data in this repo. |
+
+An important point of note is that data was gathered an analysed to give a single point-in-time reference. The DFZ is constantly changing, but at a very slow pace. If you look again, the numbers will have changed, but critically, a few weeks or even one or two months later, the numbers won't have changed dramatically. My personal opinion is that the data in the reports are OK if used for macro level analysis, but not micro level.

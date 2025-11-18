@@ -1,3 +1,8 @@
+---
+parent: Reports
+nav_order: 1
+---
+
 # 2025 Report
 
 Each section below describes the results attained by analysing all the gathered BGP routing data.

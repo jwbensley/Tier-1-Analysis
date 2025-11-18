@@ -1,3 +1,8 @@
+---
+parent: The Problems with Network Tiers
+nav_order: 3
+---
+
 # Tier 1 ASNs
 
 In order to do some analysis and compare Tier 1s and non Tier 1s, we're going to need to identify who is / is not a Tier 1.

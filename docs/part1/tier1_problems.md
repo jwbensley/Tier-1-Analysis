@@ -1,3 +1,8 @@
+---
+parent: The Problems with Network Tiers
+nav_order: 2
+---
+
 # What's Wrong With The Tier 1 Definition
 
 There are many problems, here are just some of them...
