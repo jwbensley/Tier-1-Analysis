@@ -1,3 +1,59 @@
-remote_theme: "jekyll/minima@bf9ef98"
+
+title: Tier 1 Analysis
+url: "https://tier1-analysis.53bits.co.uk/"
+repository: jwbensley/Tier-1-Analysis
+
+defaults:
+  - scope:
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+search_enabled: false
+
+# For copy button on code
+enable_copy_code_button: true
+
+# remote_theme: "jekyll/minima@bf9ef98"
+# minima:
+#   hide_site_feed_link: true
+#   skin: classic
+#   nav_enabled: true
+
+remote_theme: pmarsceill/just-the-docs
+
+mermaid:
+  version: "9.1.6"
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+color_scheme: dark
+
+nav_enabled: true
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: ""
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/jwbensley/Tier-1-Analysis" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
 plugins:
   - jemoji
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+sass:
+  quiet_deps: true
+  silence_deprecations: ['import']

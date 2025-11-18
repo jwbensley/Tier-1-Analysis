@@ -1,4 +1,9 @@
-# What Is The Network Tiering System and What's Wrong With It?
+---
+parent: The Problems with Network Tiers
+nav_order: 1
+---
+
+# What's The Network Tiering System and What's Wrong With It?
 
 ## Overview
 

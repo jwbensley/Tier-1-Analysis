@@ -1,3 +1,8 @@
+---
+parent: Getting and Processing the Data
+nav_order: 2
+---
+
 # Getting The Data
 
 ## Reconstructing BGP Tables
@@ -9,6 +14,8 @@ For example, ASN XYZ is not peering with any public or private collectors howeve
 In reality the ASNs will prefer some overlapping routes and some non-overlapping routes. But if enough BGP tables from XYZ downstreams are collected, it could be possible to reconstruct the full table for XYZ as seen by it's downstreams. Therefore, parsing the routes exported by all ASNs to all public MRTs archives gives the best chance of getting the required data.
 
 This requires parsing all MRT files from RouteViews and RIS, and all CLI dumps from PCH, and asking the community to donate some CLI outputs to fill in the blanks.
+
+In the case that AS65000 has two downstreams, 65001 and 65002, and 65001 sees `192.0.2.0/24` via `[ 65000 65555 ]` and 65002 sees `192.0.2.0/24` via `[ 65000 65444 65555 ]`, both paths are recorded in 65000's reconstructed table (`[ 65555 ]` and `[ 65444 65555 ]`). In the end a full table (in terms of number of prefixes) should be reconstructed for each networking being examined, and if they are available, multiple paths are stored against each prefix.
 
 It should be noted that there are many physical connections between networks which are not seen in the data collected by public route collectors. This is because networks which contribute data to public route collectors, tend to only send their best path (the use of [Add-Path](https://www.rfc-editor.org/rfc/rfc7911.html) is rare in the DFZ).
 
