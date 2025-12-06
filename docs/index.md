@@ -8,7 +8,7 @@ The archaic tiering system used for ranking networks that form the Internet impl
 
 The industry has been saying for years that this isn't true. Despite this, not only do many people still believe it, many people see no reason _not_ to believe it, nor to try and put an end to this broken tiering system.
 
-The content in this repository aims to provide information showing how this tiering system is fundamentally broken, to highlight that it should be abandoned ASAP, and that the extended to which the marketing teams of Tier 1 networks have succeeded in pulling the wool over our eyes.
+The content in this repository aims to provide information showing how this tiering system is fundamentally broken, to highlight that it should be abandoned ASAP, and that the extent to which the marketing teams of Tier 1 networks have succeeded in pulling the wool over our eyes.
 
 To do this, BGP data from the most interconnected networks in the world will be gathered, analysed and compared.
 
